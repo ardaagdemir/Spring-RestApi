@@ -78,7 +78,7 @@ public class ProductService {
         hm.put(status, false);
         hm.put(message, "Invalid Value");
         for (Product item : ls){
-            if (item.getDetail().contains(q) && item.getTitle().contains(q)){
+            if (item.getDetail().contains(q) || item.getTitle().contains(q)){
                 hm.put(status, true);
                 hm.put(result, ls);
             }

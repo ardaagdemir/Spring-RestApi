@@ -43,7 +43,6 @@ public class ProductController {
     public ResponseEntity search(@RequestParam String q){
         return productService.search(q);
     }
-
     @GetMapping("/priceSearch")
     public ResponseEntity priceSearch(@RequestParam Integer p){
         return productService.priceSearch(p);
